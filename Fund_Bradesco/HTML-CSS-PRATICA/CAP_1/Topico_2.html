@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>  
+
+    <head>    
+        <meta charset=”utf-8”>    
+        <title>Título da página</title>  
+    </head> 
+    <!-- background color -->
+    <body bgcolor="red">  
+
+        <!-- Foreground color, primeiro plano da pagina-->
+        <font color="black"></font>
+
+        <!-- Tamanho font -->
+        <font size="5px"></font>
+
+        <!-- Estilo -->
+        <font face="Verdana"></font>
+
+        <!-- Quebra de Linha -->
+        <br>
+
+        <!-- Paragrafos -->
+        <p></p>
+
+        <!-- Linha Horizontal -->
+        <hr>
+
+        <!-- Listas -->
+        <!-- Nao ordenada -->
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <!-- Ordenada -->
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+
+        <!-- Definicao -->
+        <dl>
+            <dt></dt>
+            <dd></dd>
+        </dl>
+
+        <!-- Insercao de Links -->
+        <a href="Endereço destino"> Texto para seu link </a>
+
+        <!-- Insercao de Imagens -->
+        <img src= “Local onde está a imagem”>
+
+        <!-- Tabelas -->
+        <!-- Tabela -->
+        <table></table>
+
+        <!-- Colunas -->
+        <td></td>
+
+        <!-- linhas -->
+        <tr></tr>
+
+        <!-- Juncao -->
+        <table>
+            <tr>
+                <td> Fundação Bradesco </td>
+                <td> Apostila </td>
+            </tr>
+        </table>
+
+        <!-- Formularios -->
+        <!-- Sao compostos por, TEXT AREA, RADIO BUTTONS, CHECKBOXES e 
+            outros widgets -->
+
+        <form action="destino URL"  method = "GET ou POST ">  </form>
+
+        <!-- Exemplo- Formulario -->
+        <form action=”/deixaremos-em-branco” method=”post”>
+            <label> Text: </label>
+            <input type=”text”>
+            <label> Password: </label>
+            <input type=”password”>
+            <label> Textarea: </label>
+            <textarea> </textarea >
+        </form>
+
+        <!-- Types -->
+        <!-- Subtmit -->
+        <!-- O type submit envia os dados do formulário à página-destino 
+            do atributo actions. -->
+        <input type="submit">
+
+        <!-- Reset -->
+        <!-- O type reset redefine todos os campos para padrão, assim 
+            que acionado. -->
+        <input type="reset">
+
+        <!-- Button -->
+        <!-- Uma tag button com o type button não realiza nenhuma ação, 
+            a não ser que seja acionada via codificação Javascript. -->
+        <input type="button">
+
+        <!-- Checkbox -->
+        <!-- Usados em questoes com opcoes de escolha sim ou nao -->
+        <input type="checkbox" name="opcao" value="A" checked>Escolha A<br>
+        <input type="checkbox" name="opcao" value="B">Escolha B<br>   
+
+        <!-- Radio -->
+        <!-- Similar a Checkbox, porem somente uma das opcoes pode ser 
+            escolhida -->
+
+        <input type="radio" name="opcao" value="selectA" checked> Masculino
+        <input type="radio" name="opcao" value="selectB">Feminino
+
+        <!-- Select -->
+        <!-- A tag <select> é formada por um conjunto de opções <option>. 
+            Tais opções fornecem ao usuário uma lista organizada no 
+            formato drop-down. -->
+        <select><
+            <option value="verde">Verde</option> 
+            <option value="vermelho">Vermelho</option>
+            <option value="azul">Azul</option> 
+            <option value="alpha">Alpha</option>
+        </select>
+
+        <!-- hidden -->
+        <!-- O type hidden torna o campo input invisível para o usuário, 
+            permitindo, dessa forma, a passagem de dados para o servidor 
+            sem a necessidade de interação com o usuário. -->
+        <label>Campo Visivel</label>
+        <input type="text"><br>
+        <label>Campo Invisivel</label>
+        <input type="hidden" name="pais" value="brasil"><br>
+              
+              
+    </body>
+
+</html>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">aula2703</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Cruzeiro do Sul</string>
+    <string name="nav_header_subtitle">Gabriel Bigarato</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Sair</string>
+
+    <string name="menu_home">Quem Somos</string>
+    <string name="menu_gallery">Galeria</string>
+    <string name="menu_contato">Contato</string>
+    <string name="menu_computacao">Ciencia da Computação</string>
+    <string name="menu_ads">Analise e Desenvovimento de Sistemas</string>
+    <string name="menu_imc">Calcular IMC</string>
+    <string name="menu_media">Calcular Media 3 Alunos</string>
+
+
+
+
+
+</resources>

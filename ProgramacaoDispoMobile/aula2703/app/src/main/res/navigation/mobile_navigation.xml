@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.aula2703.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.aula2703.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_contato"
+        android:name="com.example.aula2703.ui.contato.ContatoFragment"
+        android:label="@string/menu_contato"
+        tools:layout="@layout/fragment_contato" />
+
+    <fragment
+        android:id="@+id/nav_computacao"
+        android:name="com.example.aula2703.ui.computacao.ComputacaoFragment"
+        android:label="@string/menu_computacao"
+        tools:layout="@layout/fragment_ciencia_computacao"/>
+
+    <fragment
+        android:id="@+id/nav_ads"
+       android:name="com.example.aula2703.ui.ads.AdsFragment"
+        android:label="@string/menu_ads"
+        tools:layout="@layout/fragment_analise_dev_sis"/>
+
+    <fragment
+        android:id="@+id/nav_imc"
+        android:name="com.example.aula2703.ui.imc.ImcFragment"
+        android:label="@string/menu_imc"
+        tools:layout="@layout/fragment_imc"/>
+
+    <fragment
+        android:id="@+id/nav_media"
+        android:name="com.example.aula2703.ui.media.MediaFragment"
+        android:label="@string/menu_media"
+        tools:layout="@layout/fragment_media"/>
+
+
+</navigation>

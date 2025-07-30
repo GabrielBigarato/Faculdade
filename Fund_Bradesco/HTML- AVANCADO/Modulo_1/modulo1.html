@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<HTML lang="pt-br">
+    <HEAD>
+        <meta charset="utf-8">
+       <TITLE>Modulo1</TITLE>
+    </HEAD>
+ 
+    <BODY>
+      <!-- Aqui um exemplo simples de tabela -->
+      <TABLE>
+         <TR>
+            <TD> Nome </TD>
+            <TD> Sobrenome </TD>
+         <TR>
+            <TD> Anna </TD>
+            <TD> Santos </TD>
+         <TR>
+            <TD> Vanessa </TD>
+            <TD> Medeiros </TD>
+      </TABLE>
+
+      <!--Agora a mesma tabela porem com bordas  -->
+      <TABLE border="1">
+         <TR>
+            <TD> Nome </TD>
+            <TD> Sobrenome </TD>
+         <TR>
+            <TD> Anna </TD>
+            <TD> Santos </TD>
+         <TR>
+            <TD> Vanessa </TD>
+            <TD> Medeiros </TD>
+      </TABLE>
+
+      <!-- Agora a mesma tabela com bordas porem colorida -->
+      <TABLE border="3" bordercolor="red">
+         <TR>
+            <TD> Nome </TD>
+            <TD> Sobrenome </TD>
+         <TR>
+            <TD> Anna </TD>
+            <TD> Santos </TD>
+         <TR>
+            <TD> Vanessa </TD>
+            <TD> Medeiros </TD>
+      </TABLE>
+
+      <!-- Agora a mesma tabela com a tag bgcolor> que altera a cor de fundo -->
+      <TABLE border="3" bordercolor="red" bgcolor="yellow">
+         <TR>
+            <TD> Nome </TD>
+            <TD> Sobrenome </TD>
+         <TR>
+            <TD> Anna </TD>
+            <TD> Santos </TD>
+         <TR>
+            <TD> Vanessa </TD>
+            <TD> Medeiros </TD>
+      </TABLE>
+
+      <!-- Agora a mesma tabela porem usando a tag <bgcolor> em partes 
+         especificas da tabela, combinando com as tags <TR> ou <TD> -->
+      <TABLE border="3" bordercolor="red" bgcolor="yellow">
+         <TR>
+            <TD bgcolor="white"> Nome </TD>
+            <TD> Sobrenome </TD>
+         <TR>
+            <TD> Anna </TD>
+            <TD bgcolor="white"> Santos </TD>
+         <TR>
+            <TD bgcolor="white"> Vanessa </TD>
+            <TD> Medeiros </TD>
+      </TABLE>
+      
+      <!-- Agora a mesma tabela porem ao inves do fundo colorido podemos
+         colocar uma imagem` -->
+      
+      <TABLE border="3" bordercolor="red" background="download.png">
+         <TR>
+            <TD bgcolor="white"> Nome </TD>
+            <TD> Sobrenome </TD>
+         <TR>
+            <TD> Anna </TD>
+            <TD bgcolor="white"> Santos </TD>
+         <TR>
+            <TD bgcolor="white"> Vanessa </TD>
+            <TD> Medeiros </TD>
+      </TABLE>
+
+      <!-- Agora faremos uso das tags <Width> e <Height>, que definem 
+         largura e a altura da tabela -->
+
+      <TABLE WIDTH="300" HEIGHT="20%" BORDER="2">
+         <TR BGCOLOR= #E0EEEE>
+            <TD><FONT FACE= "Comic Sans MS"><B>Nome</B></TD>
+            <TD><FONT FACE= "Comic Sans MS"><B>Sobrenome</B></TD>
+         <TR>
+            <TD><FONT FACE= "Calibri">Anna</FONT></TD>
+            <TD><FONT FACE= "Calibri">Santos</FONT></TD>
+         <TR BGCOLOR = #E0EEEE>
+            <TD><FONT FACE= "Calibri">Vanessa</FONT></TD>
+            <TD><FONT FACE= "Calibri">Medeiros</FONT></TD>
+      </TABLE>
+
+      <!-- Agora veremos a combinacao da TAG <table> com a tag <align> -->
+
+      <!-- Primeiro veremos em LEFT(Esquerda) -->
+
+      <TABLE WIDTH="300" HEIGHT="20%" BORDER="2" align="LEFT">
+         <TR BGCOLOR= #E0EEEE>
+            <TD><FONT FACE= "Comic Sans MS"><B>Nome</B></TD>
+            <TD><FONT FACE= "Comic Sans MS"><B>Sobrenome</B></TD>
+         <TR>
+            <TD><FONT FACE= "Calibri">Anna</FONT></TD>
+            <TD><FONT FACE= "Calibri">Santos</FONT></TD>
+         <TR BGCOLOR = #E0EEEE>
+            <TD><FONT FACE= "Calibri">Vanessa</FONT></TD>
+            <TD><FONT FACE= "Calibri">Medeiros</FONT></TD>
+      </TABLE>
+
+      <!-- Agora veremos em Center(Centro) -->
+
+      <TABLE WIDTH="300" HEIGHT="20%" BORDER="2" align="center">
+         <TR BGCOLOR= #E0EEEE>
+            <TD><FONT FACE= "Comic Sans MS"><B>Nome</B></TD>
+            <TD><FONT FACE= "Comic Sans MS"><B>Sobrenome</B></TD>
+         <TR>
+            <TD><FONT FACE= "Calibri">Anna</FONT></TD>
+            <TD><FONT FACE= "Calibri">Santos</FONT></TD>
+         <TR BGCOLOR = #E0EEEE>
+            <TD><FONT FACE= "Calibri">Vanessa</FONT></TD>
+            <TD><FONT FACE= "Calibri">Medeiros</FONT></TD>
+      </TABLE>
+
+      <!-- E por ultimo em Right(Direita) -->
+
+      <TABLE WIDTH="300" HEIGHT="20%" BORDER="2" align="Right">
+         <TR BGCOLOR= #E0EEEE>
+            <TD><FONT FACE= "Comic Sans MS"><B>Nome</B></TD>
+            <TD><FONT FACE= "Comic Sans MS"><B>Sobrenome</B></TD>
+         <TR>
+            <TD><FONT FACE= "Calibri">Anna</FONT></TD>
+            <TD><FONT FACE= "Calibri">Santos</FONT></TD>
+         <TR BGCOLOR = #E0EEEE>
+            <TD><FONT FACE= "Calibri">Vanessa</FONT></TD>
+            <TD><FONT FACE= "Calibri">Medeiros</FONT></TD>
+      </TABLE>
+    </BODY> 
+ 
+      <!-- Vamos alterar agora o espacamento entre a borda 
+      e as celulas usando a tag <cellspacing> -->
+   
+      <TABLE WIDTH="300" HEIGHT="20%" BORDER="2" cellspacing="10">
+         <TR BGCOLOR= #E0EEEE>
+            <TD><FONT FACE= "Comic Sans MS"><B>Nome</B></TD>
+            <TD><FONT FACE= "Comic Sans MS"><B>Sobrenome</B></TD>
+         <TR>
+            <TD><FONT FACE= "Calibri">Anna</FONT></TD>
+            <TD><FONT FACE= "Calibri">Santos</FONT></TD>
+         <TR BGCOLOR = #E0EEEE>
+            <TD><FONT FACE= "Calibri">Vanessa</FONT></TD>
+            <TD><FONT FACE= "Calibri">Medeiros</FONT></TD>
+      </TABLE>
+
+   <!--  Vamos agora alterar o espacamento entre os dados e a
+      borda da celula usando a tag <cellpadding> -->
+      
+      <TABLE WIDTH="300" HEIGHT="20%" BORDER="2"cellspacing="10" cellpadding="7">
+         <TR BGCOLOR= #E0EEEE>
+            <TD><FONT FACE= "Comic Sans MS"><B>Nome</B></TD>
+            <TD><FONT FACE= "Comic Sans MS"><B>Sobrenome</B></TD>
+         <TR>
+            <TD><FONT FACE= "Calibri">Anna</FONT></TD>
+            <TD><FONT FACE= "Calibri">Santos</FONT></TD>
+         <TR BGCOLOR = #E0EEEE>
+            <TD><FONT FACE= "Calibri">Vanessa</FONT></TD>
+            <TD><FONT FACE= "Calibri">Medeiros</FONT></TD>
+      </TABLE>
+
+   <!-- Agora, vamos analisar os atributos da tag <TD>. Podemos 
+      mudar as propriedades das celular utilizando os seguintes 
+      atributos; ALIGN, VALIGN, COLSPAN, ROWSPAN -->
+      
+   <!-- Vamos ver primeiro o ALIGN, com RIGHT, CENTER, LEFT -->
+
+      <TABLE WIDTH="300" HEIGHT="20%" BORDER="2"cellspacing="10" cellpadding="7">
+         <TR BGCOLOR= #E0EEEE>
+            <TD align="left"><B>Nome</B></TD>
+            <TD align="right"><B>Sobrenome</B></TD>
+         <TR>
+            <TD align="center">Anna</TD>
+            <TD align="center">Santos</TD>
+         <TR BGCOLOR = #E0EEEE>
+            <TD align="right">Vanessa</TD>
+            <TD align="left">Medeiros</TD>
+      </TABLE>
+
+   <!-- Vamos ver agora VALIGN, com TOP, BOTTOM, CENTER -->
+   
+   <!-- VALIGN modifica a altura dos dados dentro da celula, 
+      BOTTOM alinha os dados com a parte inferior da celula, 
+      TOP alinha com a parte superior e CENTER centraliza dentro 
+      da celula. -->
+
+      <TABLE WIDTH="300" HEIGHT="20%" BORDER="2"cellspacing="10" cellpadding="7">
+         <TR BGCOLOR= #E0EEEE>
+            <TD valign="bottom"><B>Nome</B></TD>
+            <TD valign="top"><B>Sobrenome</B></TD>
+         <TR>
+            <TD valign="center">Anna</TD>
+            <TD valing="top">Santos</TD>
+         <TR BGCOLOR = #E0EEEE>
+            <TD valign="bottom">Vanessa</TD>
+            <TD valign="center">Medeiros</TD>
+      </TABLE>
+
+    <!-- Vamos ver agora COLSPAN-->
+    
+    <!-- COLSPAN, e ultilizado para mesclar uma celula em mais 
+      de uma coluna, horizontal-->
+
+      <TABLE WIDTH="300" HEIGHT="20%" BORDER="2"cellspacing="10" cellpadding="7">
+         <TR BGCOLOR= #E0EEEE>
+            <TD colspan="2"><B>Nome</B></TD>
+         <TR>
+            <TD align="center">Anna</TD>
+            <TD align="center">Santos</TD>
+            <td align="center">Goncaves</td>
+
+         <TR BGCOLOR = #E0EEEE>
+            <TD colspan="3">Vanessa</TD>
+      </TABLE>
+
+   <!--  Vamos ver agora ROWSPAN-->
+
+   <!-- ROWSPAN, e utilizado para mesclar uma celula em mais de 
+      uma coluna, vertical -->
+
+      <TABLE WIDTH="300" HEIGHT="20%" BORDER="2"cellspacing="10" cellpadding="7">
+         <TR BGCOLOR= #E0EEEE>
+            <TD rowspan><B>Nome</B></TD>
+            <TD rowspan><B>Sobrenome</B></TD>
+         <TR>
+            <TD rowspan>Anna</TD>
+            <TD rowspan="2">Santos</TD>
+         <TR BGCOLOR = #E0EEEE>
+            <TD rowspan>Vanessa</TD>
+            
+      </TABLE>
+
+   </body>
+</HTML>

@@ -1,0 +1,102 @@
+@startuml SistemaVacinas
+
+class Vacina {
+    - nome: String
+    - tipo: String
+    - fabricante: Fabricante
+    - estoque: int
+    - dosesRecomendadas: int
+    - doencaAlvo: String
+
+    + Vacina(nome: String, tipo: String, fabricante: Fabricante, estoque: int, dosesRecomendadas: int, doencaAlvo: String)
+    + getNome(): String
+    + setNome(nome: String): void
+    + getTipo(): String
+    + setTipo(tipo: String): void
+    + getFabricante(): Fabricante
+    + setFabricante(fabricante: Fabricante): void
+    + getEstoque(): int
+    + setEstoque(estoque: int): void
+    + getDosesRecomendadas(): int
+    + setDosesRecomendadas(doses: int): void
+    + getDoencaAlvo(): String
+    + setDoencaAlvo(doenca: String): void
+    + toString(): String
+}
+
+class Fabricante {
+    - nome: String
+    - endereco: String
+    - contato: String
+
+    + Fabricante(nome: String, endereco: String, contato: String)
+    + getNome(): String
+    + setNome(nome: String): void
+    + getEndereco(): String
+    + setEndereco(endereco: String): void
+    + getContato(): String
+    + setContato(contato: String): void
+    + toString(): String
+}
+
+class Fornecedor {
+    - nome: String
+    - contato: String
+
+    + Fornecedor(nome: String, contato: String)
+    + getNome(): String
+    + setNome(nome: String): void
+    + getContato(): String
+    + setContato(contato: String): void
+    + toString(): String
+}
+
+class Pessoa {
+    - nome: String
+    - faixaEtaria: FaixaEtaria
+
+    + Pessoa(nome: String, faixaEtaria: FaixaEtaria)
+    + getNome(): String
+    + setNome(nome: String): void
+    + getFaixaEtaria(): FaixaEtaria
+    + setFaixaEtaria(faixaEtaria: FaixaEtaria): void
+    + toString(): String
+}
+
+class FaixaEtaria {
+    - descricao: String
+
+    + FaixaEtaria(descricao: String)
+    + getDescricao(): String
+    + setDescricao(descricao: String): void
+    + isAdulto(): boolean
+    + isCrianca(): boolean
+    + isIdosa(): boolean
+    + toString(): String
+}
+
+class SistemaVacinas {
+    - vacinas: List<Vacina>
+
+    + SistemaVacinas()
+    + adicionarVacina(vacina: Vacina): void
+    + removerVacina(nomeVacina: String): void
+    + listarVacinas(): List<Vacina>
+    + obterVacinasRecomendadasPorFaixaEtaria(pessoa: Pessoa): List<Vacina>
+}
+
+note as n
+	Participantes
+	Gabriel Bigarato
+    Vitor Costa
+    Matheus Lino
+    Jhonne Walker
+end note
+
+Pessoa -right-> FaixaEtaria
+FaixaEtaria --> SistemaVacinas
+SistemaVacinas --> Vacina
+Vacina -left-> Fornecedor
+Vacina -right-> Fabricante
+
+@enduml

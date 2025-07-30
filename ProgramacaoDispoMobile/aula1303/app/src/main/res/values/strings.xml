@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">aula1303</string>
+
+    <string name="escolherEstado"> Escolha o Estado</string>
+
+    <string-array name="array_estado">
+        <item> São Paulo</item>
+        <item> Rio de Janeiro</item>
+        <item> Espirito Santo</item>
+        <item> Minas Gerais</item>
+    </string-array>
+</resources>

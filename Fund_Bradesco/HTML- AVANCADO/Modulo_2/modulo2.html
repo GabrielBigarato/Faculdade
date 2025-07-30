@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<HTML lang="pt-br">
+	<HEAD>
+        <meta charset="utf-8">
+		<TITLE>Modulo2</TITLE>
+	</HEAD>
+
+<BODY>
+
+    <!-- Criando Formularios HTML -->
+    <!-- Utilizamos a tag FORM -->
+
+	<FORM ACTION="g.biga1234@email.com" METHOD="get">
+
+    <!-- Atributo ACTION, ele especifica a URL do script que processara os 
+        dados do formulario -->
+
+<!-- -------------------------------------------------------------------------------------------------------- -->
+
+    <!-- Atributo METHOD, especifica a menria de envio dos dados do 
+        formulario para o servidor web -->
+
+    <!-- METHOD="POST", envia direto o fluxo de dados para o script CGI no 
+        serv, mais ultilizado, pois permite a transmissao de uma maior 
+        quantidade de dados para o serv-->
+
+    <!-- METHOD="GET o fluxo de dados é anexado ao URL especificado no 
+        atributo ACTION e enviado ao serv como uma unica URL, e utilizado
+        para respostas unicas, como uma string de texto." -->
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- Exemplo de Formulario com INPUT -->
+		<P><FONT FACE="CALIBRI">Nome: <INPUT TYPE=TEXT  NAME="nome" SIZE="25" MAXLENGHT="50"></P>
+        <P>Estado: <INPUT TYPE =text NAME="uf" SIZE="2" VALUE="SP"></FONT></P>
+
+    <!-- Tag INPUT, existem diferentes tipos de campos de entrada e dados 
+        no formulario: -->
+
+    <!-- INPUT TYPE, Especifica o tipo de controle a ser criado, se nada 
+        for especificado o padrao e "text" -->
+    
+    <!-- INPUT VALUE, Especifica o valor inicial do controle. E opcional, 
+        com excecao de quando TYPE e "radio" ou "checkbox" -->
+
+    <!-- INPUT NAME, Nomeia cada campo do formulario para que o script 
+        possa manipular os dados -->
+    
+    <!-- INPUT MAXLENGHT, quando o valor de TYPE for "TEXT" ou "PASSWORD",
+         eles estabelecem o numero maximo de caracteres do campo, o valor 
+         padrao e ILIMITADO -->
+    
+    <!-- INPUT SRC, Quando o valor TYPE for "IMAGE", este atributo especi
+        fica a localizacao da imagem usada para decorar o botao enviar -->
+
+    <!-- INPUT CHECKED, Quando TYPE tem o  valor "radio" ou "checkbox", 
+        este atributo especifica siginifica que o botao esta selecionado-->
+
+    <!-- INPUT SIZE, Especifica o tamanho inicial do controle. A largura 
+        e dada em pixels, com excecao de quando o valor for "text" ou 
+        "password". Nestes casos, o valor refere-se ao numero de caracteres. -->
+
+<!-- ------------------------------------------------------------------------------------------------------ -->   
+
+    <!-- Atributo TYPE, especficia o tipo de controle ou de campo que sera
+         criado. Portanto ele e o mais importante. Os tipos de controle de
+          entrada que podem ser criados sao:-->
+    
+    <!-- TYPE IMAGE, criar um botao de enviar baseado em uma imagem especi
+        fica, cuja URL deve ser fornecida -->
+
+    <!-- TYPE BUTTON, cria um botao para ser pressionado. O atributo deve 
+        ter o nome do botao -->
+
+    <!-- TYPE RADIO, cria um botao de escolha unica. -->
+
+    <!-- TYPE FILE, cria um controle para selecao de arquivo. O valor do 
+        atributo deve ser configurado como o nome do arquivo -->
+
+    <!-- TYPE SUBMIT, cria um botao de enviar -->
+
+    <!-- TYPE TEXT, cria um campo de texto de uma linha -->
+
+    <!-- TYPE CHECKBOX, cria uma caixa de selecao -->
+
+    <!-- TYPE RESET, cria um botao de reset, que limpa todos os campos -->
+
+    <!-- TYPE PASSWORD, cria um campo texto sem exibir o que esta sendo 
+        digitado -->
+
+    <!-- TYPE HIDDEN, cria um controle oculto -->
+
+    <!-- OBS: Atributo TYPE nao deve ser inserido com aspas. Caso nenhum
+         valor seja definido, o campo sera criado como texto. -->
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- Exemplo de campo de senha em um formulario -->
+
+        <p font face="calibri">NOME: <input type="text" name="nome" size="25" maxlength="50"></p>
+        <p>Num do cartao de credito:<input type="text" name="nun_cartao" size="16"></p>
+        <p>Senha: <input type="password" name="senha" size="6"></p>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- Agora adicionaremos ao formulario "radio" buttons, botoes de 
+        unica escolha -->
+
+    <P>Selecione a bandeira do cartão de crédito:<BR>
+        <INPUT TYPE=radio NAME="selecao-cartao" CHECKED>VISA
+        <BR>
+        <INPUT TYPE=radio NAME="selecao-cartao">MASTERCARD
+    </P>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- Agora vamos inserir botoes de multipla escolha "checkbox"-->
+
+    <P>Selecione horário de entrega:<BR>
+        <INPUT TYPE=checkbox NAME="horario1" SIZE="1">8h às 12h<BR>
+        <INPUT TYPE=checkbox NAME="horario2" SIZE="1">13h às 15h<BR>
+        <INPUT TYPE=checkbox NAME="horario2" SIZE="1">16h às 18h
+    </P>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- Inserindo uma Area de Texto "TEXTAREA" -->
+
+    <P>Endereço: <INPUT TYPE=TEXT  NAME="end"  SIZE="30"></P>
+    <P>Referência: <TEXTAREA NAME="ref" ROWS="2" COLS= "40"></TEXTAREA></P>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- Botoes SUBMIT e RESET -->
+
+    <INPUT TYPE=submit VALUE="Enviar"><INPUT TYPE=reset VALUE="Limpar">
+<!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- Inserindo um campo oculto -->
+
+    <INPUT TYPE=hidden NAME="cpf" VALUE="verdadeiro">
+<!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <!-- Lista de Opcoes e Menu -->
+
+    <H3>EXEMPLO DE LISTA DE OPÇÕES</H3>
+    <H4>Escolha a cidade que deseja conhecer</H4>
+        <SELECT NAME="cidades" SIZE="4">
+            <OPTION>Londres 
+            <OPTION>Paris
+            <OPTION>Roma 
+            <OPTION>Madri
+        </SELECT>
+    
+    <H3>EXEMPLO DE MENU</H3>
+    <H4>Escolha a cidade que deseja conhecer</H4>
+        <SELECT NAME="cidades">
+            <OPTION>Londres 
+            <OPTION>Paris
+            <OPTION>Roma 
+            <OPTION>Madri
+        </SELECT>
+        
+<!-- ------------------------------------------------------------------------------------------------------ -->
+
+	</FORM>
+</BODY>
+
+</HTML >

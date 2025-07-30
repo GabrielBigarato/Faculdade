@@ -1,0 +1,282 @@
+/* Inicia todos os elementos com margin 0 e padding 0 */
+*{margin: 0; padding: 0;} 
+
+.container-principal{font-family: "verdana"; color:#777; }
+
+/* Definir as propriedades do topo */
+header{width: 100%; height: 100px; background-color: #fff; position: relative; top: 0;}
+
+/* Definir as propriedades do logo */
+
+.logo{position: absolute; width: 300px; height: auto;}
+.logo img{width: 90%; margin-left: 10%;}
+
+/* Position */
+/* O CSS possui uma propriedade chamada position.
+A propriedade position trabalha com coordenadas comandadas pelas 
+seguintes propriedades:
+
+Top – superior
+Left – esquerda
+Right – direita
+Bottom – inferior.
+
+Por definição, os elementos começam todos alinhados à esquerda – left. 
+Caso algum valor seja definido para left, não faz sentindo atribuir 
+valor para right. O mesmo ocorre com relação a top e bottom. Se fizermos 
+isso, ele dará prioridade para o top e o left.   
+
+A propriedade position precisa de um ponto inicial para calcular a 
+coordenada e posicionar o elemento na tela.
+
+Além disso, a propriedade position possui três valores possíveis. 
+Clique nos valores para conhecê-los.
+
+Fixed - O valor fixed fixa o elemento nas coordenadas que atribuirmos. 
+Mesmo com a rolagem da tela, o elemento permanece FIXO na posição definida.
+
+Relative - O ponto inicial para o cálculo de elementos com position 
+definida como relative é o canto superior esquerdo do próprio elemento.
+
+Absolute - Diferente do relative, o valor absolute tem como ponto inicial 
+o elemento em que ele está inserido – seu pai. Terá como coordenada inicial 
+o top e left do container do qual faz parte*/
+
+/* Definir as propriedades do menu */
+
+nav{position: absolute; right: 30px; bottom: 0px;}
+nav ul li {float: left; color: #fff; width: auto; margin
+    : 0.8em; font-size: 1.5em; font-family: "verdana"; 
+    list-style: none; }
+nav ul li a {text-decoration: none; color: #bbb;}
+nav ul li a:hover{color: #b13030}
+
+/* Definir as propriedades da imagem principal */
+
+#banner{width: 100%;}
+#banner img{width: 100%; margin-bottom: 0;}
+
+/* Definir as propriedades dos pop-ups */
+
+.modalDialog {
+    position: fixed;
+    font-family: "verdana";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(181, 9, 9, 0.8 );
+    z-index: 9999;
+    opacity: 0;
+    /* O CSS transitions permite que as mudancas nos valoes das propriedades 
+    CSS ocorram suavemente, com uma duracao determinada 
+    
+    Neste caso, utilizaremos a propriedade transition para realizar a mudança 
+    de valor da propriedade opacity. Esse valor foi definido juntamente com as 
+    demais propriedades da classe .modalDialog e seu valor inicial é 0, ou seja, 
+    o elemento estará totalmente transparente.
+
+    Com a propriedade transition, estamos informando ao navegador que o motor de 
+    renderização deve realizar a troca de forma suave, quando o elemento com a 
+    class modalDialog sofrer uma mudança na propriedade opacity.
+
+    A troca deve ser feita em 400 ms (milissegundos), utilizando o efeito ease-in 
+    para determinar o ritmo em que a transição será feita. 
+    
+    Existem alguns padrões predefinidos para a utilização do transition. Por exemplo:
+    Linear
+    Ease
+    Ease-in
+    Ease-out
+    Ease-in-out.
+    Também podemos personalizar o efeito de transição. No entanto, é necessário ter um 
+    conhecimento intermediário das propriedades do CSS. */
+
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+
+    /* A propriedade pointer-events com o valor none informa ao navegador que os 
+    elementos que possuem a class modalDialog não devem ser alvo de eventos realizados 
+    pelo mouse. Por exemplo: cliques e hovers.
+
+    Desse modo, as divs com essa classe modalDialog tem o tamanho total da janela e estão
+     acima de todos os outros elementos, por conta do z-index com valor 99999. Com isso, 
+     qualquer interação com os elementos abaixo dela seria impossível.
+
+    Para que isso não ocorra, definimos o valor none para a propriedade pointer-events. 
+    O valor indica ao navegador que o elemento não deve receber eventos realizados pelo 
+    mouse. */
+
+    pointer-events: none;
+
+    /* A propriedade display permite que você indique ao navegador como os elementos 
+    devem ser renderizados pelo motor.
+    Existem cerca de 20 valores possíveis para a propriedade display. Iremos utilizar 
+    apenas os valores block e none. 
+    
+    Block - O valor block indica ao navegador que o elemento deve ser renderizado 
+    em bloco, juntamente com seus filhos ou elementos contidos nele.
+    
+    None - Já o valor none permite desativar a exibição do elemento. Desse modo, o 
+    documento é renderizado como se o elemento não existisse. */
+
+    display: none;
+}
+
+.modalDialog:target{
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Para definir os valores para div, para a tag <p> e para imagem inserida no primeiro 
+pop-up, iremos utilizar a tecnica do aninhamento. */
+.modalDialog div{
+    width: 500px;
+    position: relative;
+
+    margin: 10% auto;
+    /* Tambem declaramos a propriedade margin apenas em uma linha. Nesse caso, estamos 
+    informando ao navegador que a div tera 10% de margin-top. 
+
+    Nas demais, o navegador deve realizar o calculo para cetralizar:
+
+    margin-top - 10%
+    margin-right - auto
+    margin-bottom - auto
+    margin-left - auto*/
+
+    padding: 5px 20px 13px 20px;
+    /* Para declarar o padding(espacamento dentro da div) foram atribuidas quatro valores 
+    em uma mesma propriedade.
+    
+    Essa forma de definir a propriedade e equivalente a:
+
+    padding-top - 5px
+    padding-right - 20px
+    padding-bottom - 13px
+    padding-left - 20px */
+
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+
+    border-radius: 10px;
+    /* A propriedade border-radius permite que as extremidades do elemento sejam arredondadas
+     de acordo com o valor atribuido a elas 
+
+     Como nas propriedades mencionadas anteriormente, tambem podemos definir valores em 
+     apenas uma linha para border-radius. Observe que demos o valor de 10px para todas as 
+     bordas do elemento*/
+
+    background-color: #fff;
+}
+
+.modalDialog p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.modalDialog img {
+    width: 50%;
+    position: relative;
+    margin-left: 25%;
+}
+
+.close {
+    background-color: #606061;
+    color: #FFFFFF;
+
+    line-height: 25px;
+    /* A propriedade line-height define a altura que cada linha do texto terá. 
+    No caso do botão close, iremos ajustar a altura que a letra X terá dentro do elemento.*/
+
+    position: absolute;
+    right: -12px;
+
+    text-align: center;
+    /* A propriedade text-align permite alinhar o texto. Os valores dessa propriedade são:
+
+    Left (padrão) – atribui alinhamento à esquerda.
+
+    Center – atribui alinhamento centralizado.
+
+    Right – atribui alinhamento à direita.
+
+    Justify – atribui alinhamento justificado.
+
+    Initial – atribui os valores padrão de formatação de texto que o navegador usa.
+
+    Inherit – herda as propriedades de alinhamento de texto do pai (elemento em que o texto 
+    está contido). */
+
+    top: -10px;
+    width: 24px;
+
+    text-decoration: none;
+    /* A propriedade text-decoration permite inserir formatação ao texto por meio do CSS. 
+    Por exemplo, podemos inserir underline.Para dar destaque aos links, toda tag <a> possui 
+    cor diferente e underline (_ sublinhado) quando é adicionada. Para eliminar esse 
+    comportamento, usamos a propriedade text-decoration com valor none. */
+
+    font-weight: bold;
+
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    /* Assim como na formatação da div, também indicamos ao navegador como ele deve 
+    renderizar a borda do elemento */
+}
+
+.close :hover {
+    background-color: #b50909;
+}
+
+footer{
+    width: 100%; 
+    height: 18%; 
+    background-color: #b50909; 
+    color: #fff; 
+    position: relative; 
+    float: left; 
+    font-family: 'verdana';
+}
+footer .footer-text{
+    width: 30%;
+    margin: 1%;
+    position: relative;
+    float: left;
+}
+footer .footer-text a{
+    color: #fff;
+}
+
+/* Definir a cor de fundo das paginas sobre, clientes e contato */
+.color-page {background-color: #ddd;}
+
+/* Definir as propriedades das imagens de titulo */
+.img-titulo {width: 20%; height: auto; margin-bottom: 10px; position: relative; float: left; margin-right: 5%;}
+.img-titulo img{width: 90%; margin-left: 10%; margin-top: 50px;}
+
+/* Definir as propriedades da pagina clientes */
+#clientes-code {width: 75%; position: relative; float: left;}
+#clientes-code .config-clientes {width: 40%; border: 1px solid #b50909; margin-left: 1.5%; padding: 1%; float: left; margin-top: 30px; background-color: #fff;}
+#clientes-code .config-clientes img {width: 60%; margin-left: 20%; margin-bottom: 20px;}
+#clientes-code .config-clientes p {width: 90%; margin-left: 5%; font-size: 1.2em; margin-bottom: 20px; text-align: center ;}
+#clientes-code .config-clientes p a{color: #111;}
+
+/* Definir as propriedades da pagina sobre */
+#container-sobre{width: 65%; margin-left: 5%; float: left; position: relative; height: 80%; background-color: #fff; top: 10%;}
+#txt-sobre {width: 40%; float: left; position: relative; padding: 5%;}
+#txt-sobre p {width: 100%; position: relative; float: left;}
+#txt-sobre dl {width: 50%;}
+#img-conteudo-sobre {width: 45%; position: relative; float: left; padding: 2%;}
+#img-conteudo-sobre img {width: 100%;}
+
+/* definir as propriedades da pagina contato */
+#txt-contato {width: 100%; height: 100%;}
+#txt-contato form {width: 38%; position: relative; float: left; background-color: #fff; padding: 2%; top: 5%; min-height: 400px;}
+#txt-contato form label {font-weight: bold;}
+#txt-contato form label {max-width: 100%; width: 99%; height: 30px; margin-top: 10px; margin-bottom: 15px; border: solid #b50909 1px; padding-left: 1%; }
+#txt-contato form textarea {max-width: 100%; width: 99%; border: solid #b50909 1px; padding-left: 1%; min-height: 100px;}
+#txt-contato form button {width: 30%; height: auto; cursor: pointer; background-color: #b50909; color: #fff; font-size: 1.5em; padding: 15px 0 15px 0; margin-left: 35%; margin-top: 1%;}

@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>EXERCICIO 2 - Inserindo Efeitos </title>
+	</head>
+<body>
+	<p><font face="verdana" size="3" color="FF0000">Inserindo efeitos na minha pagina <i>web</i>.</font></p>
+
+	<p>Nome:<b>Gabriel BIgarato</b><br>
+	Nasci:<u>17/07/2005</u><br>
+	End:Rua Araruna 75</p>
+	<hr>
+	<p> Muito Legal!!</p>
+	<hr>
+</body>
+
+</html>

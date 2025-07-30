@@ -1,0 +1,101 @@
+p {color: green; font-size: 30px;}
+
+/* Comentarios em CSS */
+
+/* --------------------------------------------------------------- */
+
+/* Seletores são a declaração que o CSS utiliza para identificar os 
+elementos do HTML. Por meio dos seletores, podemos aplicar a formatação 
+em quase qualquer parte de uma página web.*/
+
+/* 
+Seletores mais importantes 
+
+Seletor    |Formato|  Descricao
+
+Universal    | * |    Qualquer elemento.
+Tipo elemento|<e>|    Seleciona qualquer elemento do tipo <e>.
+Classe       | . |    Seleciona os elementos que contêm a classe.
+ID           | # |    Seleciona o elemento identificado com o ID.
+Link         | a |    ZSeleciona a pseudo-class link.
+Hover      |:hover|   É aplicada quando posicionamos o mouse sobre o elemento.
+*/
+
+/* --------------------------------------------------------------- */
+
+/* Aplicacao da Classe no CSS */
+/* Na folha de estilo, a propriedade class vem precedida por um ponto(.) */
+
+/* .nomedaclasse{propriedade:valor} */
+
+/* --------------------------------------------------------------- */
+
+/* Aplicacao da Classe noHTML */
+
+/* <p class="nome da classe">Seu texto</p> */
+
+/* E possivel aplicar mais de uma class em cada elemento: */
+
+/* <p class="primeira da classe segunda class"> Seu texto </p> */
+
+/* Tambem podemos adicionar a mesma class em varios elementos: */
+
+/* <p class="primeira da classe">Primeiro paragrafo</p>
+<p class="primeira da classe">Segundo paragrafo</p>
+<p class="primeira da classe">Terceiro paragrafo</p> */
+
+/* --------------------------------------------------------------- */
+
+/* O ID deve ser unico nos elementos, nao existe um numero de ID igual 
+a outro */
+
+/* No CSS o ID deve ser escrito da seguinte forma: */
+/* #seuID {propriedade: valor;} Exemplo: #menu{ border: 5px;}, #footer{ top: 30px;} */
+
+/* Já no HTML, o ID deve ser registrado do seguinte modo:  */
+/* 
+<p id='paragrafo1'>Seu texto</p>
+<div id='amigo1'> Seu texto </div>
+*/
+
+/* DICA */
+/* É muito importante não utilizarmos o mesmo nome para os IDs e as 
+classes. Desse modo, evitamos conflitos. Também não é aconselhável 
+colocar ID e class no mesmo elemento. No entanto, isso é possível. 
+Vejamos:  */
+/* 
+<p id='amigo1' class='amigo2'> Seu texto </p>
+<p id='amigo3' class='amigo2'> Seu texto </p> 
+*/
+
+/* --------------------------------------------------------------- */
+
+/* Insercao de Imagens */
+/* Pode parecer um pouco estranho, mas podemos inserir uma imagem na 
+página web por meio do CSS. A propriedade que possibilita a inserção 
+de imagem pelo CSS é o background. A propriedade background é dividida 
+de vários modos e pode assumir valores específicos. Clique em cada modo 
+para conhecê-lo. */
+
+/* Background-color     | Define a cor do fundo de um elemento */
+/* Background-image     | Insere uma imagem como fundo do elemento*/
+/* Background-size      | Configura o tamanho da imagem no elemento */
+/* Background-position  | Define a posicao da imagem em relacao a caixa*/
+/* Background-attachment| Define se a imagem de fundo rolara com a tela*/
+/* Background-repeat    | Define se a imagem de fundo pode se repetir ou nao */
+
+/* --------------------------------------------------------------- */
+
+/* Formatacao de Listas com Propriedades CSS */
+/* Para modificar a aparência das listas, o CSS oferece uma propriedade 
+exclusiva de formatação a list-style. Tal propriedade é dividida em três 
+características. */
+
+/* List-style-type| O list-style-type é responsável por configurar o tipo
+ de marcador que a lista irá utilizar. */
+
+/* List-style-position| O list-style-position define a posição do marcador 
+da lista. */
+
+/* List-style-image| O list-style-image define se os marcadores da lista 
+serão imagens. */
